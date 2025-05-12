@@ -1,0 +1,101 @@
+*{
+  font-family: 'Tenorite', sans-serif;
+}
+
+body {
+  background-image: url(img/wiucgate2.jpg);
+}
+
+.login-card{
+  width: 422px;
+  height: 538px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.wiuc-img img{
+  width: 88px;
+  height: 88px;
+  margin-left: 40%;
+}
+
+.login-card img{
+  width: 88px;
+  height: 88px;
+  margin-left: 39%;
+  margin-top: 7%;
+}
+
+.login-card p{
+  text-align: center;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.login-container {
+  margin-left: 5%;
+  width: 360px;
+}
+
+.student-id p{
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.login-container{
+  margin-top: 10%;}
+
+.login-container .student-id p{
+  justify-content: left;
+  margin-left: -78%;
+  margin-bottom: -2%;
+}
+
+.student-id input{
+  width: 370px;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #C9C9C9;
+}
+
+.student-pin p{
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.student-pin input{
+  width: 370px;
+  height: 40px;
+  margin-top: 18px;
+  border-radius: 8px;
+  border: 1px solid #C9C9C9;
+}
+
+.login-container .student-pin p{
+  justify-content: left;
+  margin-left: -92.5%;
+  margin-bottom: -12px;
+}
+
+.login-btn{
+  margin-top: 10%;
+  border-radius: 10px;
+  width: 374px;
+  height: 43px;
+  border: 1px solid #969696;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.login-btn:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  color: white;
+}

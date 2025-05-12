@@ -1,0 +1,19 @@
+<?php
+// Database connection details
+$host = "localhost";
+$user = "root";
+$password = ""; // no password
+$database = "onlinevoting";
+$port="3307";
+
+// Create connection
+$conn = new mysqli($host, $user, $password, $database, port: $port);
+
+// Check if the connection failed and handle the error
+if ($conn->connect_error) {
+    // Log the error message for debugging purposes
+    error_log("Connection failed: {$conn->connect_error}");
+    // Display a user-friendly message to the client
+    echo "We are experiencing technical difficulties. Please try again later.";
+}
+?>

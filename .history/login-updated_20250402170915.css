@@ -1,0 +1,13 @@
+body {
+  background-image: url(img/wiucgate1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Required for the pseudo-element */
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;

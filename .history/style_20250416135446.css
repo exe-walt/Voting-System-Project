@@ -1,0 +1,282 @@
+*{
+  font-family: 'Tenorite', sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 1%;
+  justify-content: space-between;
+}
+
+.nav-bar .logo {
+  width: 262px;
+  height: 58px;
+}
+
+.nav-bar img {
+  width: 54px;
+  height: 54px;
+}
+
+.profile{
+  display: flex;
+}
+
+.profile img{
+  width: 54px;
+  height: 54px;
+}
+
+.profile .student-details{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.profile .student-details .student-name{
+  font-size: 18px;
+  font-weight: 750;
+  color: #000000;
+}
+
+.profile .student-details .student-id{
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+}
+
+hr{
+  border-color: #d7d7d7;
+  border-width: 1px;
+}
+
+.content{
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-container{
+  display: flex;
+  background-color: #f9f9f9;
+  width: 1440px;
+  height: 754px;
+  justify-content: center;
+}
+
+.left-container{
+  border: 1px solid #E0E0E0;
+  background-color: #F4F4F4;
+  width: 323px;
+  height: 377px;
+  margin-top: 5%;
+  border-radius: 16px;
+}
+
+.left-container .vote-txt{
+  margin-left: 8%;
+  margin-top: 4%;
+}
+
+.left-container .vote-txt p{
+  font-size: 18px;
+  font-weight: 650;
+  color: #000000;
+}
+
+.roles-container{
+  justify-content: center;
+  margin: 10px;
+  width: 255px;
+  height: 310px;
+  padding-left: 15px;
+}
+
+.div-president, .div-genSec, .div-externalaffairs, .div-fincont, 
+.div-wcom, .div-deptwcom{
+  width: 100%;
+  padding: 10px;
+  margin-top: 4%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.div-president:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+
+.president-link, .genSec-link, .extAff-link, .finCont-link, .wcom-link, .deptwcom-link{
+  text-decoration: none;
+  color: black;
+}
+
+.div-genSec:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+
+.div-externalaffairs:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+
+.div-fincont:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+
+.div-wcom:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+
+.div-deptwcom:hover{
+  background-color: #0a1f78;
+  cursor: pointer;
+  border-radius: 12px;
+  color: white;
+}
+
+.card-right{
+  width: 1010px;
+  height: 620px;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  box-shadow: 2px 3px 6.8px #69696926;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.card-right p{
+  margin-left: 3%;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+}
+
+.studentCard-details{
+  width: 410px;
+  height: 445px;
+  border-radius: 12px;
+  border: 1px solid #e7e7e7;
+}
+
+.studentCard2-details{
+  width: 410px;
+  height: 445px;
+  border-radius: 12px;
+  border: 1px solid #D7D7D7;
+  margin-left: 2.5%;
+}
+
+/* for peter's image use this dimensions
+.studentCard-details{
+  width: 446px;
+  height: 455px;
+  border-radius: 12px;
+  border: 1px solid #a1a1a1;
+  margin-left: 3%;
+} */
+
+.studentCard-details img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #968585;
+}
+
+.studentCard2-details img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #968585;
+}
+
+.candidate-profile{
+  width: 93%;
+  border-radius: 12px;
+  margin:auto;
+  margin-top: 15px;
+}
+
+.student-info{
+  width: 88%;
+  margin:auto;
+  margin-top: 22px;
+}
+
+.candidate-name{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.candidate-role{
+  font-size: 19px;
+  font-weight: 500;
+  color: #a1a1a1;
+}
+
+.vote-btn{
+  width: 90%;
+  height: 45px;
+  border-radius: 12px;
+  border: 1px solid #969696;
+  background-color: #0A1F78;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-left: 5%;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Tenorite", sans-serif;
+}
+
+.vote-btn:hover{
+  background-color: #5a62f6;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nextbtn{
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+  border: 1px solid #969696;
+  background-color: #0A1F78;
+  color: #ffffff;
+  margin-top: -30%;
+  margin-left: 85%;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Tenorite", sans-serif;
+}
+
+.nextbtn:hover{
+  background-color: #5a62f6;
+}
+

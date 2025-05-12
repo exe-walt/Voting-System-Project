@@ -1,0 +1,41 @@
+<?php
+session_start();
+
+// Connect to your database
+$servername = "localhost";
+$username = "root";          // replace with your database username
+$password = "";              // replace with your database password
+$dbname = "your_database_name";  // replace with your actual database name
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Sanitize inputs
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$passwordInput = mysqli_real_escape_string($conn, $_POST['password']);
+
+// Fetch user from dash-login table
+$sql = "SELECT * FROM `dash-login` WHERE email='$email' AND password='$passwordInput'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // User exists, start session
+    $row = $result->fetch_assoc();
+    $_SESSION['fullName'] = $row['fullName'];
+    $_SESSION['email'] = $row['email'];
+
+    // Redirect to dashboard
+    header("Location: dashboard.php");
+    exit();
+} else {
+    // User doesn't exist — redirect to login page
+    header("Location: dash-login.php?error=invalid");
+    exit();
+}
+
+$conn->close();
+?>

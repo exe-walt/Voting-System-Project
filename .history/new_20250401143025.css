@@ -1,0 +1,57 @@
+*{
+  font-family: 'Tenorite', sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+}
+
+.nav-bar .logo {
+  width: 262px;
+  height: 58px;
+}
+
+.nav-bar img {
+  width: 54px;
+  height: 54px;
+}
+
+.profile{
+  display: flex;
+}
+
+.profile img{
+  width: 54px;
+  height: 54px;
+}
+
+.profile .student-details{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.profile .student-details .student-name{
+  font-size: 18px;
+  font-weight: 750;
+  color: #000000;
+}
+
+.profile .student-details .student-id{
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+}
+
+hr{
+  border-color: #d7d7d7;
+  border-width: 1px;
+}
+
+.content{
+  
+}

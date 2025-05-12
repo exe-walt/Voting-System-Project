@@ -1,0 +1,245 @@
+*{
+  font-family: 'Tenorite', sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+}
+
+.nav-bar .logo {
+  width: 262px;
+  height: 58px;
+}
+
+.nav-bar img {
+  width: 54px;
+  height: 54px;
+}
+
+.profile{
+  display: flex;
+}
+
+.profile img{
+  width: 54px;
+  height: 54px;
+}
+
+.profile .student-details{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.profile .student-details .student-name{
+  font-size: 18px;
+  font-weight: 750;
+  color: #000000;
+}
+
+.profile .student-details .student-id{
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+}
+
+hr{
+  border-color: #d7d7d7;
+  border-width: 1px;
+}
+
+.content{
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-container{
+  background-color: #f9f9f9;
+  width: 1440px;
+  height: 1024px;
+  border: 1px solid #d7d7d7;
+}
+
+.left-container{
+  border: 1px solid #d7d7d7;
+  width: 295px;
+  height: 373px;
+  margin-left: 3%;
+  margin-top: 5%;
+  border-radius: 16px;
+}
+
+.left-container .vote-txt{
+  margin-left: 8%;
+  margin-top: 4%;
+}
+
+.left-container p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.roles-container{
+  justify-content: center;
+  border: 1px solid #d7d7d7;
+  margin: 10px;
+  height: 310px;
+}
+
+.exploration .div-president {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .president {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.90px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 18px;
+  letter-spacing: -0.27px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.exploration .div-genSec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .gen-secretary {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* External Affairs */
+.div-externalaffairs{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.ext-affairs{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* Financial Controller */
+.exploration .div-fincont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-financial{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* Women's Commissioner */
+.exploration .div-wcom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-wcom{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* Deputy Women's Commissioner */
+.exploration .div-deptwcom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .dept-wcom {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  margin-right: -6.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.exploration .frame-3 div:hover {
+  background-color: #0A1F78;
+  color: #ffffff;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}

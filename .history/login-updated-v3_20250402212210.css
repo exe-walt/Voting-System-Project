@@ -1,0 +1,52 @@
+body {
+  background-image: url(img/wiucgate1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Required for the pseudo-element */
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+body p {
+  width: 1920px;
+  height: 1080px; 
+}
+
+.login-card {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 300px; /* Set a width for the card */
+  height: 400px; /* Set a height for the card */
+  background-color: white; /* Background color for visibility */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+  position: absolute; /* Positioning to center */
+  top: 50%; /* Move down 50% of the viewport height */
+  left: 50%; /* Move right 50% of the viewport width */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  z-index: 2; /* Ensure it sits above the background */
+}
+
+.wiuc-img {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+}
+
+.wiuc-img img {
+  width: 88px; /* Set width for the image */
+  height: 88px; /* Set height for the image */
+}

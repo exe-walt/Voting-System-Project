@@ -1,0 +1,47 @@
+*{
+  font-family: 'Tenorite', sans-serif;
+}
+
+.card{
+  width: 422px;
+  height: 538px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.card img {
+  width: 138px;
+  height: 138px;
+  margin-left: 34%;
+  margin-top: 6%;
+}
+
+.dash-txt{
+  justify-content: center;
+}
+
+.card p{
+  font-size: 20px;
+  font-weight: 800;
+  color: #000000;
+  margin-left: 33%;
+}
+
+.email, .password{
+  margin-left: 8%;
+  margin-bottom: 5%;
+}
+
+.email, .password{
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+.email

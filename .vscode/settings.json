@@ -1,0 +1,19 @@
+{
+  "git.ignoreLimitWarning": true,
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "adminPaul",
+      "database": "testdb",
+      "username": "paula"
+    }
+  ],
+  "editor.gotoLocation.multipleDefinitions": "goto"
+}

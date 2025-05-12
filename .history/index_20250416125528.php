@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisconsin E-voting</title>
+  <link rel="icon" href="img/wiuc1wbg.png" type="image/png">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Login card -->
+  <div class="login-card">
+    <div class="wiuc-img">
+      <img src="img/wiuc1wbg.png" alt="wiuclogo" class="logo">
+    </div>
+    
+    <p>Welcome to our e-voting portal</p>
+    
+    <!-- Form now points to login.php -->
+    <form action="login.php" method="post" autocomplete="off">
+      <div class="login-container">
+        
+        <div class="student-id">
+          <label for="studentID">Student ID:</label>
+          <input type="text" placeholder="Enter your student ID" required id="studentID" name="studentID" autocomplete="off">
+        </div>
+
+        <div class="student-pin">
+          <label for="studentPin">Pin:</label>
+          <input type="password" placeholder="Enter your Pin" required id="studentPin" name="studentPin" autocomplete="off">
+        </div>
+
+        <!-- The submit button is inside the form -->
+        <button type="submit" class="login-btn" name="loginBtn">Login</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

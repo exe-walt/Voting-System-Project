@@ -1,0 +1,10 @@
+*{
+  font-family: 'Tenorite', sans-serif;
+}
+
+body p{
+  font-size: 35px;
+  font-weight: 800;
+  color: #000000;
+  margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+<?php
+session_start();
+require_once 'db.php'; // include the database connection
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Retrieve and sanitize user input
+    $studentID = trim($_POST['studentID']);
+    $studentPin = trim($_POST['studentPin']); // will be integrated later
+
+    // Check if Student ID exists
+    $stmt = $conn->prepare("SELECT * FROM login WHERE studentID = ?");
+    $stmt->bind_param("s", $studentID);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows === 1) {
+        $user = $result->fetch_assoc();
+
+        // ✅ Check if the user has already voted
+        $voteCheck = $conn->prepare("SELECT * FROM votes WHERE studentID = ?");
+        $voteCheck->bind_param("s", $studentID);
+        $voteCheck->execute();
+        $voteResult = $voteCheck->get_result();
+
+        if ($voteResult->num_rows > 0) {
+            // 🚫 Already voted — alert and redirect
+            echo "<script>alert('You have already voted and cannot login again.'); window.location.href='index.php';</script>";
+            exit();
+        }
+
+        // ✅ Set session variables for authenticated user
+        $_SESSION['studentID'] = $user['studentID'];
+        $_SESSION['fullName']  = $user['fullName'];
+
+        $_SESSION['user'] = [
+            'id'       => $user['id'],
+            'username' => $user['studentID'],
+            'profile'  => $user['profile']
+        ];
+
+        // ✅ Redirect to President voting page
+        header("Location: President.php");
+        exit();
+
+    } else {
+        echo "Student ID not found. <a href='index.php'>Try again</a>";
+    }
+
+    // Clean up
+    $stmt->close();
+    $conn->close();
+
+} else {
+    header("Location: index.php");
+    exit();
+}
+?>

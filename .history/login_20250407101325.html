@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="icon" href="/img/wiuc1wbg.png" type="image/png">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Login card will be here -->
+     <div class="login-card">
+      <div class="wiuc-img"></div>
+        <img src="img/wiuc1wbg.png" alt="wiuclogo" class="logo">
+
+        <p>Welcome to our e-voting portal</p>
+
+
+        <form action="login.php" method="post" <?php
+session_start();
+
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "your_database_name";
+
+$conn = new mysqli($host, $user, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$id_number = $_POST['id_number'];
+$pin = $_POST['pin'];
+
+// Prepare SQL to prevent SQL injection
+$stmt = $conn->prepare("SELECT * FROM users WHERE id_number = ?");
+$stmt->bind_param("s", $id_number);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows === 1) {
+    $user = $result->fetch_assoc();
+
+    // Verify hashed PIN
+    if (password_verify($pin, $user['pin'])) {
+        // Set session variables
+        $_SESSION['id_number'] = $user['id_number'];
+        $_SESSION['name'] = $user['name'];
+        
+        // Redirect to dashboard
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        echo "Invalid PIN. <a href='login.html'>Try again</a>";
+    }
+} else {
+    echo "ID Number not found. <a href='login.html'>Try again</a>";
+}
+
+$stmt->close();
+$conn->close();
+?>
+>
+          <div class="login-container">
+            <div class="student-id">
+              <label for="studentId">Student ID:</label>
+              <input type="text" placeholder="Enter your student ID" required id="studentID" name="studentID">
+            </div>
+
+            <div class="student-pin">
+              <label for="studentPin">Pin:</label>
+              <input type="password" placeholder="Enter your Pin" required id="studentPin" name="studentPin">
+            </div>
+
+            <a href="President.html" class="loginToPage1">
+              <button type="submit" class="login-btn" name="loginBtn">Login</button>
+            </a>
+            
+          </div>
+        </form>
+
+
+        
+      </div>
+     </div>
+  </p>
+</body>
+</html>

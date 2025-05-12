@@ -1,0 +1,485 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Tenorite", sans-serif;
+}
+
+.exploration {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.exploration .div {
+  background-color: #f9f9f9;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #757575 solid;
+}
+
+.exploration .frame {
+  display: flex;
+  width: 1440px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 24px 104px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #d7d7d7;
+}
+
+.exploration .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .logo {
+  position: relative;
+  width: 222px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.exploration .profile {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.exploration .img {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.student-details{
+  display: flex;
+  flex-direction: column;
+  width: 153px;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+}
+
+.exploration .student-name{
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-weight: 700;
+  color: #131316;
+  font-size: 18px;
+  letter-spacing: -0.16px;
+  line-height: 16px;
+}
+
+.student-id{
+  position: relative;
+  align-self: stretch;
+  font-weight: 400;
+  color: #757575;
+  font-size: 14px;
+  letter-spacing: -0.15px;
+  line-height: 16px;
+}
+
+.left-frame{
+  display: flex;
+  width: 295px;
+  align-items: center;
+  gap: 10px;
+  padding: 21px 20px;
+  position: absolute;
+  top: 178px;
+  left: 104px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  border: 1.2px solid;
+  border-color: #e0e0e0;
+}
+
+.exploration .frame-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.toptxt{
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-weight: 600;
+  color: #131316;
+  font-size: 18px;
+  letter-spacing: -0.16px;
+  line-height: 16px;
+}
+
+.exploration .frame-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: 15px;
+}
+
+.exploration .div-president {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .president {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.90px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 18px;
+  letter-spacing: -0.27px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.exploration .div-genSec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .gen-secretary {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* External Affairs */
+.div-externalaffairs{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.ext-affairs{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* Financial Controller */
+.exploration .div-fincont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-financial{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* Women's Commissioner */
+.exploration .div-wcom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-wcom{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+/* Deputy Women's Commissioner */
+.exploration .div-deptwcom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.exploration .dept-wcom {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  margin-right: -6.00px;
+  font-weight: 500;
+  color: #131316;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.exploration .frame-3 div:hover {
+  background-color: #0A1F78;
+  color: #ffffff;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.exploration .overlap-group {
+  position: absolute;
+  width: 919px;
+  height: 799px;
+  top: 178px;
+  left: 417px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  box-shadow: 2px 3px 6.8px #69696926;
+}
+
+.exploration .rectangle {
+  width: 426px;
+  height: 366px;
+  top: 80px;
+  left: 23px;
+  position: absolute;
+  background-color: #d9d9d9;
+  border-radius: 12px;
+}
+
+.exploration .rectangle-2 {
+  width: 426px;
+  height: 366px;
+  top: 80px;
+  left: 467px;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.exploration .candidates {
+  width: 280px;
+  height: 45px;
+  top: 20px;
+  left: 23px;
+  position: absolute;
+  text-align: left;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.card1{
+  border: 1px solid #968585;
+  width: 440px;
+  height: 440px;
+  border-radius: 12px;
+  margin-top: 70px;
+  margin-left: 17px;
+}
+
+.card1-button{
+  width: 426px;
+  height: 40px;
+  border-radius: 12px;
+  position: absolute;
+  top: 460px;
+  left: 23px;
+  font-size: 18px;
+  font-family: "Tenorite", sans-serif;
+  border: #969696;
+}
+
+.card1-button:hover{
+  background-color: #888faf;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.card-right{
+  width: 919px;
+  height: 620px;
+  border-radius: 16px;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  box-shadow: 2px 3px 6.8px #69696926;
+  margin-left: 29.5%;
+  margin-top: 8.6%;
+}
+
+.card-right p{
+  margin-left: 3%;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.cards-container{
+  display: flex;
+  margin-left: 3%;
+}
+
+.studentCard-details{
+  width: 410px;
+  height: 410px;
+  border-radius: 12px;
+  border: 1px solid #a1a1a1;
+  margin-left: 1%;
+}
+
+.studentCard2-details{
+  width: 410px;
+  height: 410px;
+  border-radius: 12px;
+  border: 1px solid #a1a1a1;
+  margin-left: 2.5%;
+}
+
+/* for peter's image use this dimensions
+.studentCard-details{
+  width: 446px;
+  height: 455px;
+  border-radius: 12px;
+  border: 1px solid #a1a1a1;
+  margin-left: 3%;
+} */
+
+.studentCard-details img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #968585;
+}
+
+.studentCard2-details img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid #968585;
+}
+
+.candidate-profile{
+  width: 93%;
+  border-radius: 12px;
+  margin:auto;
+  margin-top: 15px;
+}
+
+.student-info{
+  width: 88%;
+  margin:auto;
+  margin-top: 22px;
+}
+
+.candidate-name{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.candidate-role{
+  font-size: 19px;
+  font-weight: 500;
+  color: #a1a1a1;
+}
+
+.vote-btn{
+  width: 90%;
+  height: 45px;
+  border-radius: 12px;
+  border: 1px solid #969696;
+  background-color: #0A1F78;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-left: 5%;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Tenorite", sans-serif;
+}
+
+.vote-btn:hover{
+  background-color: #28A745;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+

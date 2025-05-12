@@ -1,0 +1,11 @@
+body {
+  background-image: url(img/wiucgate2.jpg);
+}
+
+.login-card{
+  width: 422px;
+  height: 538px;
+  background-color: white;
+  border-radius: 12px;
+ 
+}

@@ -1,0 +1,74 @@
+* {
+  font-family: 'Tenorite', sans-serif;
+}
+
+/* Overall Page Layout */
+body {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Thank You Text */
+body p {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+body h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Thank You Image */
+body img {
+  margin-bottom: 5%;
+  width: 30%;  /* Make it more responsive */
+  height: auto;
+}
+
+/* Logout Button Section */
+.logout-btn {
+  margin-top: 3%;
+}
+
+/* Button Style */
+button {
+  width: 180px;
+  height: 50px;
+  border-radius: 16px;
+  border: 1px solid #969696;
+  background-color: #0A1F78;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #00b7ff;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  button {
+    width: 100%;
+  }
+  body img {
+    width: 50%;
+  }
+}

@@ -1,0 +1,43 @@
+<?php
+session_start();
+
+// Connect to your database
+$servername = "localhost";
+$username = "root"; 
+$password = "";
+$database = "onlinevoting";
+$port="3307";
+
+$conn = new mysqli($servername, $username, $password, $database, port:$port);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Sanitize inputs
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$passwordInput = mysqli_real_escape_string($conn, $_POST['password']);
+
+// Fetch user from dash-login table
+$sql = "SELECT * FROM `dash_login`
+ WHERE email='$email' AND password='$passwordInput'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // User exists, start session
+    $row = $result->fetch_assoc();
+    $_SESSION['fullName'] = $row['fullName'];
+    $_SESSION['email'] = $row['email'];
+
+    // Redirect to dashboard
+    header("Location: facultyadmin/dashboard.php");
+    exit();
+} else {
+    // User doesn't exist — redirect to login page
+    header("Location: dash-login.php");
+    exit();
+}
+
+$conn->close();
+?>
