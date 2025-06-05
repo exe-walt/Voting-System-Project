@@ -83,8 +83,8 @@ body {
   border: 1px solid #c9c9c9;
 }
 
-input::placeholder { /* WebKit browsers */
-  padding: 5px;
+input:: placeholder { /* WebKit browsers */
+  line-height: 1.5em;
 }
 
 .login-btn {

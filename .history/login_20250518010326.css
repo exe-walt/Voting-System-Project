@@ -84,8 +84,10 @@ body {
 }
 
 input::placeholder { /* WebKit browsers */
-  padding: 5px;
+  line-height: 1.5em;
 }
+
+
 
 .login-btn {
   margin-top: 10%;

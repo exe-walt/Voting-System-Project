@@ -53,20 +53,18 @@ body {
   margin-bottom: -2%;
 }
 
-.student-id, .student-pin {
+.student-id,
+.student-pin label {
   font-size: 18px;
   font-weight: 550;
   padding-left: 8px;
-}
-
-.student-id {
-  margin-top: 8%;
+  margin-top: ;
 }
 
 .student-id input {
   width: 365px;
   height: 40px;
-  margin-top: 8px;
+  margin-top: 12px;
   border-radius: 8px;
   border: 1px solid #c9c9c9;
 }
@@ -78,13 +76,15 @@ body {
 .student-pin input {
   width: 365px;
   height: 40px;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-left: 8px;
   border-radius: 8px;
   border: 1px solid #c9c9c9;
 }
 
-input::placeholder { /* WebKit browsers */
-  padding: 5px;
+.login-container .student-pin p {
+  margin-left: -92.5%;
+  margin-bottom: -12px;
 }
 
 .login-btn {

@@ -65,12 +65,11 @@ if (isset($_GET['logout'])) {
     <!-- Form now points to login.php -->
     <form action="login.php" method="post" autocomplete="off">
       <div class="login-container">
-        
         <div class="student-id">
           <label for="studentID">Student ID:</label>
           <input type="text" placeholder="Enter your student ID" required id="studentID" name="studentID" autocomplete="off">
         </div>
-
+        
         <div class="student-pin">
           <label for="studentPin">Pin:</label>
           <input type="password" placeholder="Enter your Pin" required id="studentPin" name="studentPin" autocomplete="off">

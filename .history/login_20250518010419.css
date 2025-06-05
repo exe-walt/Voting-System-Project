@@ -84,7 +84,7 @@ body {
 }
 
 input::placeholder { /* WebKit browsers */
-  padding: 5px;
+  padding: 10px;
 }
 
 .login-btn {

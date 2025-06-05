@@ -1,12 +1,12 @@
-* {
-  font-family: "Tenorite", sans-serif;
+*{
+  font-family: 'Tenorite', sans-serif;
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url(img/wiucgate2.jpg);
+  background-image: url(img/wiucgate2.jpg);
 }
 
-.login-card {
+.login-card{
   width: 422px;
   height: 538px;
   background-color: white;
@@ -19,20 +19,20 @@ body {
   z-index: 2;
 }
 
-.wiuc-img img {
+.wiuc-img img{
   width: 88px;
   height: 88px;
   margin-left: 40%;
 }
 
-.login-card img {
+.login-card img{
   width: 88px;
   height: 88px;
   margin-left: 39%;
   margin-top: 7%;
 }
 
-.login-card p {
+.login-card p{
   text-align: center;
   font-size: 1.4rem;
   font-weight: 800;
@@ -43,65 +43,60 @@ body {
   width: 360px;
 }
 
-.login-container {
-  margin-top: 10%;
-}
+.login-container{
+  margin-top: 10%;}
 
-.login-container .student-id p {
+.login-container .student-id p{
   justify-content: left;
   margin-left: -78%;
   margin-bottom: -2%;
 }
 
-.student-id, .student-pin {
+.student-id, .student-pin label{ 
   font-size: 18px;
   font-weight: 550;
   padding-left: 8px;
 }
 
-.student-id {
-  margin-top: 8%;
-}
-
-.student-id input {
+.student-id input{
   width: 365px;
   height: 40px;
-  margin-top: 8px;
+  margin-top: 12px;
   border-radius: 8px;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #C9C9C9;
 }
 
-.student-pin {
-  margin-top: 8%;
+.student-pin{
+  margin-top: 8%
 }
 
-.student-pin input {
+.student-pin input{
   width: 365px;
   height: 40px;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-left: 8px;
   border-radius: 8px;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #C9C9C9;
 }
 
-input::placeholder { /* WebKit browsers */
-  padding: 5px;
+.login-container .student-pin p{
+  margin-left: -92.5%;
+  margin-bottom: -12px;
 }
 
-.login-btn {
+.login-btn{
   margin-top: 10%;
   margin-left: 8px;
   border-radius: 10px;
   width: 374px;
   height: 43px;
-  border: 1px solid #969696;
-  background-color: #0a1f78;
-  color: white;
+  border: 1px solid #0A1F78;
   font-size: 15px;
   font-weight: 600;
 }
 
-.login-btn:hover {
-  background-color: #394a98;
+.login-btn:hover{
+  background-color: rgb(57, 66, 105) 58, 88) 81, 120) 64, 95);
   cursor: pointer;
   color: white;
 }

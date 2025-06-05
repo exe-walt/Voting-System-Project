@@ -83,10 +83,6 @@ body {
   border: 1px solid #c9c9c9;
 }
 
-input::placeholder { /* WebKit browsers */
-  padding: 5px;
-}
-
 .login-btn {
   margin-top: 10%;
   margin-left: 8px;
